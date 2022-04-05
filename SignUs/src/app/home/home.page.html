@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+
+  <div class="padding">
+
+    <!--Pour le logo-->
+
+    <div class="logo">
+      <ion-icon color="light" name="sunny-outline"></ion-icon>
+    </div>
+
+    <!-- "ion-item" c est pour proposer du contenue en lignen -->
+    <ion-item>
+      <ion-label color="light">Email</ion-label>
+      <ion-input color="light" placeholder="Adresse email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Mot de passe</ion-label>
+      <ion-input color="light" placeholder="Mot de passe" type="password"></ion-input>
+    </ion-item>
+
+    <!-- "lines="none" c'est pour ne pas avoir la ligne juste au dessous" -->
+    <ion-item lines="none">
+      <!-- "fill="clear"" pour que ce soit que le texte qui soit mis en valeur 
+        et non pas le boutton tout entier -->
+      <ion-button color="light" fill="clear" slot="end">Mot de passe oublié ?</ion-button>
+    </ion-item>
+
+    <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
+    <!-- "shape="round"" pour avoir les bords en arrondi -->
+    <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
+    <ion-button color="light" fill="outline" shape="round" expand="block">CONNEXION</ion-button>
+    <br>
+    <ion-button shape="round" expand="block">INSCRIPTION</ion-button>
+
+    <ion-item lines="none">
+      <!-- "class="ion-text-center"" c'est une class speciale de la propriete ionic 
+        qui permet de centrer -->
+      <ion-label class="ion-text-center" color="light">Ou connectez-vous</ion-label>
+    </ion-item>
+
+  </div>
+
+</ion-content>

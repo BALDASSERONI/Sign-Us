@@ -1,0 +1,44 @@
+ion-content {
+    /* le "linear-gradient()" c est pour avoir un degradé de couleur *
+    * on trouve des exemples de degradé sur ce site https://uigradients.com/#PinkFlavour */
+    --ion-background-color: linear-gradient(#cbb4d4, #20002c);
+}
+
+/* c est pour rendre les "ion-item" transparent */
+ion-item {
+    /* "!important" C'est pour dire a ionic que cette propriete la est *
+    * prioritaire par rapport a l "ion item"*/
+    --ion-background-color: transparent !important;
+}
+
+/* Pour avoir un contenue a peu prés centrer */
+.padding {
+    padding: 5%;
+}
+
+
+/* Ici c est pour le logo */
+.logo {
+    height: 250px;
+    position: relative;
+}
+
+/* Ici c est pour le text a l interieur du logo */
+.logo ion-icon {
+    position: absolute;
+    /* C'est ujn font-size car l icon est un text */
+    font-size: 9em;
+    /* Pour bien centrer notre icon a l'interieur de notre boite */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+ion-list {
+    --ion-background-color: transparent !important;
+}
+
+.hidden {
+    display: none;
+}
