@@ -1,5 +1,11 @@
-<ion-content [fullscreen]="true">
 
+
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="light" size="large">Connexion</ion-title>
+  </ion-toolbar>
+  
   <div class="padding">
 
     <!--Pour le logo-->
@@ -29,16 +35,13 @@
     <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
     <!-- "shape="round"" pour avoir les bords en arrondi -->
     <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
-    <ion-button color="light" fill="outline" shape="round" expand="block" >CONNEXION</ion-button>
+    <ion-button color="light" fill="outline" shape="round" expand="block" [routerLink]="['/menu']">CONNEXION</ion-button>
     <br>
-    <ion-button shape="round" expand="block">INSCRIPTION</ion-button>
-
     <ion-item lines="none">
       <!-- "class="ion-text-center"" c'est une class speciale de la propriete ionic 
         qui permet de centrer -->
-      <ion-label class="ion-text-center" color="light">Ou connectez-vous</ion-label>
+      <ion-label class="ion-text-center" color="light" >Pas de compte SignUs?</ion-label>
     </ion-item>
-
+    <ion-button shape="round" expand="block" [routerLink]="['/inscription']">INSCRIPTION</ion-button>
   </div>
-
 </ion-content>

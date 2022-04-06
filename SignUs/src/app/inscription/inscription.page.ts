@@ -15,7 +15,7 @@ export class InscriptionPage implements OnInit {
   }
 
   retour() {
-    this.router.navigate(['/connexion'])
+    this.router.navigate(['/home'])
   }
 
   ngOnInit() {

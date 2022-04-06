@@ -8,6 +8,18 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor() {}
+
+  constructor(private router: Router) { }
+
+  navigate() {
+    this.router.navigate(['/menu'])
+  }
+
+  inscription() {
+    this.router.navigate(['/inscription'])
+  }
+
+  ngOnInit() {
+  }
 
 }
