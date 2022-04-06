@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signaler',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignalerPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  navigate() {
+    this.router.navigate(['/recapitulatif-de-vos-signalement'])
+  }
+
+  retour() {
+    this.router.navigate(['/menu'])
+  }
 
   ngOnInit() {
   }

@@ -1,37 +1,21 @@
 <ion-content>
   <div class="padding">
 
-    <!--Pour le logo-->
-
-    <div class="logo">
-      <ion-icon color="light" name="sunny-outline"></ion-icon>
-    </div>
+    <ion-toolbar>
+      <ion-title color="light" size="large">Signaler</ion-title>
+    </ion-toolbar>
 
     <!-- "ion-item" c est pour proposer du contenue en lignen -->
     <ion-item>
-      <ion-label color="light">NOM</ion-label>
-      <ion-input color="light" placeholder="MICHENKO" type="name"></ion-input>
+      <ion-label color="light">galerie d image</ion-label>
+      <ion-input color="light" placeholder="image" type="name"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label color="light">Prenom</ion-label>
-      <ion-input color="light" placeholder="Romaric" type="name"></ion-input>
+      <ion-label color="light">LOCALISATION</ion-label>
+      <ion-input color="light" placeholder="google map" type="name"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label color="light">Adresse</ion-label>
-      <ion-input color="light" placeholder="08 Truc machin chouette 97320" type="email"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="light">Email</ion-label>
-      <ion-input color="light" placeholder="miroma@gmail.com" type="email"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="light">Mot de passe</ion-label>
-      <ion-input color="light" placeholder="Mot de passe" type="password"></ion-input>
-    </ion-item>
 
     <ion-list>
       <ion-radio-group value="biff">
@@ -66,9 +50,9 @@
     <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
     <!-- "shape="round"" pour avoir les bords en arrondi -->
     <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
-    <ion-button color="light" fill="outline" shape="round" expand="block">Valider</ion-button>
+    <ion-button color="light" fill="outline" shape="round" expand="block" [routerLink]="['/recapitulatif-du-signalement']">Valider</ion-button>
     <br>
-    <ion-button shape="round" expand="block">Retour</ion-button>
+    <ion-button shape="round" expand="block" [routerLink]="['/menu']">Retour</ion-button>
 
   </div>
 

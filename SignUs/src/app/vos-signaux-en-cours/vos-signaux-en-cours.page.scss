@@ -1,4 +1,4 @@
-ion-toolbar{
+ion-toolbar, ion-card{
     --ion-background-color: transparent !important;
 }
 
@@ -17,6 +17,10 @@ ion-item {
     /* "!important" C'est pour dire a ionic que cette propriete la est *
     * prioritaire par rapport a l "ion item"*/
     --ion-background-color: transparent !important;
+}
+
+ion-card{
+    padding: 5%;
 }
 
 /* Pour avoir un contenue a peu prés centrer */
@@ -40,4 +44,16 @@ ion-item {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+ion-list {
+    --ion-background-color: transparent !important;
+}
+
+.hidden {
+    display: none;
+}
+
+p{
+    color: white;
 }

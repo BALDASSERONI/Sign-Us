@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'vos-signaux-en-cours',
+    loadChildren: () => import('./vos-signaux-en-cours/vos-signaux-en-cours.module').then( m => m.VosSignauxEnCoursPageModule)
+  },
+  {
+    path: 'recapitulatif-du-signalement',
+    loadChildren: () => import('./recapitulatif-du-signalement/recapitulatif-du-signalement.module').then( m => m.RecapitulatifDuSignalementPageModule)
+  },
+  {
+    path: 'formulaire-envoyer',
+    loadChildren: () => import('./formulaire-envoyer/formulaire-envoyer.module').then( m => m.FormulaireEnvoyerPageModule)
+  },
 ];
 
 @NgModule({

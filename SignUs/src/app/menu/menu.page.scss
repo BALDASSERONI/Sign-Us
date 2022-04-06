@@ -1,3 +1,15 @@
+ion-toolbar{
+    --ion-background-color: transparent !important;
+}
+
+ion-title{
+    font-size: 20px;
+}
+
+#souligner{
+    text-decoration: underline;
+}
+
 ion-content {
     /* le "linear-gradient()" c est pour avoir un degradé de couleur *
     * on trouve des exemples de degradé sur ce site https://uigradients.com/#PinkFlavour */

@@ -2,20 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-inscription',
-  templateUrl: './inscription.page.html',
-  styleUrls: ['./inscription.page.scss'],
+  selector: 'app-formulaire-envoyer',
+  templateUrl: './formulaire-envoyer.page.html',
+  styleUrls: ['./formulaire-envoyer.page.scss'],
 })
-export class InscriptionPage implements OnInit {
+export class FormulaireEnvoyerPage implements OnInit {
 
   constructor(private router: Router) { }
 
   navigate() {
     this.router.navigate(['/menu'])
-  }
-
-  retour() {
-    this.router.navigate(['/connexion'])
   }
 
   ngOnInit() {

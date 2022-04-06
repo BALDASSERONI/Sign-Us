@@ -1,0 +1,39 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="light" size="large">Récapitulatif du signalement</ion-title>
+  </ion-toolbar>
+
+  <div class="padding">
+
+    
+
+    <!-- "ion-item" c est pour proposer du contenue en lignen -->
+    <ion-card>
+      <p> - Localisation</p>
+      <br>
+      <p> - Media (photo/video)</p>
+      <br>
+      <p> - type d'incident</p>
+      <br>
+      <p> - Détails précisées par l'utilisateur</p>
+    </ion-card>
+
+    <br>
+    
+    <p>Une fois le Signalement terminé, appuyez sur "Valider". Votre formulaire 
+      sera envoyé en format PDF par mail à l'administration souhaitée. Elle sera 
+      également notifiée depuis l'application.
+      <br>
+      <br>
+      Si vous souhaitez modifier votre formulaire, cliquez sur "Retour".</p>
+
+      <ion-button color="light" fill="outline" shape="round" expand="block" [routerLink]="['/formulaire-envoyer']">Valider</ion-button>
+
+      <br>
+
+      <ion-button shape="round" expand="block" [routerLink]="['/signaler']">Retour</ion-button>
+
+  </div>
+
+</ion-content>

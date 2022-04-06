@@ -1,4 +1,11 @@
 <ion-content>
+  <ion-toolbar>
+    <ion-title color="light">Nom de l'utilisateur</ion-title>
+    <ion-buttons collapse="true" slot="end">
+      <ion-button color="light" id="souligner" [routerLink]="['/connexion']">Deconnexion</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
   <div class="padding">
 
     <!--Pour le logo-->
@@ -14,12 +21,14 @@
     <div class="sigle">
       <ion-icon color="light" name="location-outline"></ion-icon>
     </div>
-    <ion-button color="light" shape="round" expand="block">Signaler un incident</ion-button>
+    <ion-button color="light" shape="round" expand="block" [routerLink]="['/signaler']">Signaler un incident</ion-button>
+    
     <br>
+
     <div class="sigle">
       <ion-icon color="light" name="git-compare-outline"></ion-icon>
     </div>
-    <ion-button color="light" shape="round" expand="block">Signallement en cours</ion-button>
+    <ion-button color="light" shape="round" expand="block" [routerLink]="['/vos-signaux-en-cours']">Signallement en cours</ion-button>
 
   </div>
 </ion-content>

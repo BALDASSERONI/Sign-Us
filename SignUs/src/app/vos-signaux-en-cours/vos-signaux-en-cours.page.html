@@ -1,0 +1,48 @@
+
+
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="light" size="large">Vos signallement en cours</ion-title>
+  </ion-toolbar>
+
+
+
+  <div class="padding">
+
+
+
+    <!-- "ion-item" c est pour proposer du contenue en lignen -->
+    <ion-card>
+      <ion-item>
+        <ion-icon color="light" slot="start" name="calendar-clear-sharp"></ion-icon>
+        <ion-label color="light">Email</ion-label>
+      </ion-item>
+      <p> - Incident 1</p>
+      <p> - Incident 2</p>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon color="light" slot="start" name="calendar-sharp"></ion-icon>
+        <ion-label color="light">En cours</ion-label>
+      </ion-item>
+      <p> - Incident 1</p>
+      <p> - Incident 2</p>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon color="light" slot="start" name="checkbox-sharp"></ion-icon>
+        <ion-label color="light">Fait</ion-label>
+      </ion-item>
+      <p> - Incident 1</p>
+      <p> - Incident 2</p>
+    </ion-card>
+
+    <br>
+    <ion-button shape="round" expand="block" [routerLink]="['/menu']">Retour</ion-button>
+
+  </div>
+
+</ion-content>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-connexion',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConnexionPage implements OnInit {
 
-  constructor() { }
+
+  constructor(private router: Router) { }
+
+  navigate() {
+    this.router.navigate(['/menu'])
+  }
+
+  inscription() {
+    this.router.navigate(['/inscription'])
+  }
 
   ngOnInit() {
   }

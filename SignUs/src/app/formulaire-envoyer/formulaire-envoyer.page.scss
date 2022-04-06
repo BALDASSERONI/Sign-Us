@@ -1,9 +1,18 @@
-ion-toolbar{
+ion-toolbar, ion-card{
     --ion-background-color: transparent !important;
 }
 
+
 ion-title{
-        font-size: 30px;
+    font-size: 30px;
+}
+
+ion-card{
+    padding: 5%;
+}
+
+p{
+    font-size: 21px;
 }
 
 ion-content {
@@ -40,4 +49,16 @@ ion-item {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+ion-list {
+    --ion-background-color: transparent !important;
+}
+
+.hidden {
+    display: none;
+}
+
+p{
+    color: white;
 }
