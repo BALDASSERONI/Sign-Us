@@ -1,15 +1,20 @@
 ion-toolbar{
     --ion-background-color: transparent !important;
+    border-bottom: 3px solid white;
 }
 
 ion-title{
-        font-size: 30px;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
 }
 
 ion-content {
-    /* le "linear-gradient()" c est pour avoir un degradé de couleur *
-    * on trouve des exemples de degradé sur ce site https://uigradients.com/#PinkFlavour */
-    --ion-background-color: linear-gradient(#cbb4d4, #20002c);
+    --background: none;
+    background-image: url("../assets/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* c est pour rendre les "ion-item" transparent */
@@ -21,7 +26,12 @@ ion-item {
 
 /* Pour avoir un contenue a peu prés centrer */
 .padding {
-    padding: 5%;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 

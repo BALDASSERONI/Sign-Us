@@ -16,9 +16,11 @@ p{
 }
 
 ion-content {
-    /* le "linear-gradient()" c est pour avoir un degradé de couleur *
-    * on trouve des exemples de degradé sur ce site https://uigradients.com/#PinkFlavour */
-    --ion-background-color: linear-gradient(#cbb4d4, #20002c);
+    --background: none;
+    background-image: url("../assets/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* c est pour rendre les "ion-item" transparent */

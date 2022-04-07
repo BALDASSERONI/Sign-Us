@@ -1,58 +1,64 @@
 <ion-content>
+
+  <ion-toolbar>
+    <ion-title color="light" size="large">Signaler</ion-title>
+  </ion-toolbar>
+
   <div class="padding">
+    
+    <div>
 
-    <ion-toolbar>
-      <ion-title color="light" size="large">Signaler</ion-title>
-    </ion-toolbar>
+      <!-- "ion-item" c est pour proposer du contenue en lignen -->
+      <ion-item>
+        <ion-label color="light">galerie d image</ion-label>
+        <ion-input color="warning" placeholder="image" type="name"></ion-input>
+      </ion-item>
 
-    <!-- "ion-item" c est pour proposer du contenue en lignen -->
-    <ion-item>
-      <ion-label color="light">galerie d image</ion-label>
-      <ion-input color="light" placeholder="image" type="name"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="light">LOCALISATION</ion-label>
-      <ion-input color="light" placeholder="google map" type="name"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label color="light">LOCALISATION</ion-label>
+        <ion-input color="warning" placeholder="google map" type="name"></ion-input>
+      </ion-item>
 
 
-    <ion-list>
-      <ion-radio-group value="biff">
-        <ion-list-header>
-          <ion-label color="light">Votre statut :</ion-label>
-        </ion-list-header>
+      <ion-list>
+        <ion-radio-group value="biff">
+          <ion-list-header>
+            <ion-label color="light">Votre statut :</ion-label>
+          </ion-list-header>
 
-        <ion-item>
-          <ion-label color="light">Vandalisme</ion-label>
-          <ion-radio color="light" slot="start" value="biff"></ion-radio>
-        </ion-item>
+          <ion-item>
+            <ion-label color="light">Vandalisme</ion-label>
+            <ion-radio color="warning" slot="start" value="biff"></ion-radio>
+          </ion-item>
 
-        <ion-item>
-          <ion-label color="light">Nid de poule</ion-label>
-          <ion-radio color="light" slot="start" value="griff"></ion-radio>
-        </ion-item>
+          <ion-item>
+            <ion-label color="light">Nid de poule</ion-label>
+            <ion-radio color="warning" slot="start" value="griff"></ion-radio>
+          </ion-item>
 
-        <ion-item>
-          <ion-label color="light">Route barrée</ion-label>
-          <ion-radio color="light" slot="start" value="buford"></ion-radio>
-        </ion-item>
+          <ion-item>
+            <ion-label color="light">Route barrée</ion-label>
+            <ion-radio color="warning" slot="start" value="buford"></ion-radio>
+          </ion-item>
 
-        <ion-item>
-          <ion-label color="light" value="truc">Autres</ion-label>
-          <ion-radio color="light" slot="start"></ion-radio>
-          <ion-textarea color="light" rows="6" cols="20" class="hidden"></ion-textarea>
-        </ion-item>
+          <ion-item>
+            <ion-label color="light" value="truc">Autres</ion-label>
+            <ion-radio color="warning" slot="start"></ion-radio>
+            <ion-textarea color="warning" rows="6" cols="20" class="hidden"></ion-textarea>
+          </ion-item>
 
-      </ion-radio-group>
-    </ion-list>
+        </ion-radio-group>
+      </ion-list>
 
-    <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
-    <!-- "shape="round"" pour avoir les bords en arrondi -->
-    <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
-    <ion-button color="light" fill="outline" shape="round" expand="block" [routerLink]="['/recapitulatif-du-signalement']">Valider</ion-button>
-    <br>
-    <ion-button shape="round" expand="block" [routerLink]="['/menu']">Retour</ion-button>
+      <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
+      <!-- "shape="round"" pour avoir les bords en arrondi -->
+      <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
+      <ion-button color="light" fill="outline" shape="round" expand="block"
+        [routerLink]="['/recapitulatif-du-signalement']">Valider</ion-button>
+      <br>
+      <ion-button shape="round" expand="block" [routerLink]="['/menu']">Retour</ion-button>
+
+    </div>
 
   </div>
 
