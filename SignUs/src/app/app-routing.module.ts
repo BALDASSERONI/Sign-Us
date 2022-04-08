@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import{
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+  canActivate,
+} from '@angular/fire/auth-guard';
+
+const redirectUnauthorizedToHome = () => redirectUnauthorizedTo(['home']);
+const redirectLoggedInToMenu = () => redirectLoggedInTo(['menu']);
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule), //page d'accueil qui gère également la connexion
+    ...canActivate(redirectLoggedInToMenu)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'home', 
     pathMatch: 'full'
   },
   {
-    path: 'connexion',
+    path: 'connexion', //ici la page connexion "connexion" permettra de rediriger les échecs de connexion
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
   },
   {
@@ -25,7 +34,8 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule),
+    ...canActivate(redirectUnauthorizedToHome)
   },
   {
     path: 'vos-signaux-en-cours',
@@ -43,7 +53,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]
 })
