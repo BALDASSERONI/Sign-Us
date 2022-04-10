@@ -8,27 +8,27 @@
 
   <div class="padding">
 
-    <!--Pour le logo-->
+    <div>
+      <div>
 
-    <div class="logo">
-      <ion-icon color="light" name="sunny-outline"></ion-icon>
+        <div class="sigle">
+          <ion-icon color="light" name="location-outline"></ion-icon>
+        </div>
+        <ion-button color="light" shape="round" expand="block" [routerLink]="['/signaler']">Signaler un incident
+        </ion-button>
+      </div>
+
+      <div id="div">
+
+        <div class="sigle">
+          <ion-icon color="light" name="git-compare-outline"></ion-icon>
+        </div>
+        <ion-button color="light" shape="round" expand="block" [routerLink]="['/vos-signaux-en-cours']">Signallement
+          en
+          cours</ion-button>
+
+      </div>
     </div>
-
-
-    <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
-    <!-- "shape="round"" pour avoir les bords en arrondi -->
-    <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
-    <div class="sigle">
-      <ion-icon color="light" name="location-outline"></ion-icon>
-    </div>
-    <ion-button color="light" shape="round" expand="block" [routerLink]="['/signaler']">Signaler un incident</ion-button>
-    
-    <br>
-
-    <div class="sigle">
-      <ion-icon color="light" name="git-compare-outline"></ion-icon>
-    </div>
-    <ion-button color="light" shape="round" expand="block" [routerLink]="['/vos-signaux-en-cours']">Signallement en cours</ion-button>
 
   </div>
 </ion-content>
