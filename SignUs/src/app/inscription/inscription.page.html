@@ -4,9 +4,10 @@
     <ion-title color="light" size="large">Inscription</ion-title>
   </ion-toolbar>
 
+
+  <form [formGroup]="credentials" (ngSubmit)="login()">
+
   <div class="padding">
-
-
 
     <!-- "ion-item" c est pour proposer du contenue en lignen -->
     <ion-item>
@@ -60,9 +61,11 @@
     <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
     <!-- "shape="round"" pour avoir les bords en arrondi -->
     <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
-    <ion-button color="light" fill="outline" shape="round" expand="block" [routerLink]="['/menu']">Valider</ion-button>
+    <ion-button color="light" fill="outline" shape="round" expand="block" type="submit">Valider</ion-button>
     <br>
     <ion-button shape="round" expand="block" [routerLink]="['/home']">Retour</ion-button>
 
   </div>
+
+</form>
 </ion-content>

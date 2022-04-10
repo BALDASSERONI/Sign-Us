@@ -80,7 +80,6 @@
               "browserTarget": "app:build:production"
             },
             "ci": {
-              "progress": false
             }
           }
         },
@@ -147,6 +146,7 @@
     }
   },
   "cli": {
+    "analytics": "27e98b1d-c4bd-40b6-b852-5b6580161384",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {

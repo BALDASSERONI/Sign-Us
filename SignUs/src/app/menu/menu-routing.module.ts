@@ -7,7 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MenuPage
-  }
+  },{
+    path: 'home',
+    loadChildren: () => import('../home/home.module').then( m => m.HomePageModule), //page d'accueil qui gère également la connexion
+  },
 ];
 
 @NgModule({
