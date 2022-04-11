@@ -3,7 +3,7 @@
 <ion-content>
 
   <ion-toolbar>
-    <ion-title color="light" size="large">Connexion</ion-title>
+    <ion-title color="warning" size="large">Connexion</ion-title>
   </ion-toolbar>
   
   <form [formGroup]="credentials" (ngSubmit)="login()">
@@ -46,7 +46,7 @@
         <ion-label class="ion-text-center" color="light" >Pas de compte SignUs?</ion-label>
       </ion-item>
       <!--<ion-button shape="round" expand="block" [routerLink]="['/inscription']">INSCRIPTION</ion-button>-->
-      <ion-button shape="round" expand="block" (click)="register()">INSCRIPTION</ion-button>
+      <ion-button shape="round" expand="block" (click)="register()" color="warning">INSCRIPTION</ion-button>
     </div>
 
   </form>

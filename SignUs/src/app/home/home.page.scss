@@ -1,6 +1,6 @@
 ion-toolbar{
   --ion-background-color: transparent !important;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #ff9900;
 }
 
 ion-title{
@@ -18,7 +18,7 @@ ion-content {
 }
 
 ion-input::placeholder {
-  color: #d57a04;
+  color: #ff9900;
 
 }
 
