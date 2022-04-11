@@ -1,5 +1,6 @@
 ion-toolbar, ion-card{
     --ion-background-color: transparent !important;
+    border-bottom: 3px solid #ff9900;
 }
 
 
@@ -17,7 +18,7 @@ p{
 
 ion-content {
     --background: none;
-    background-image: url("../assets/bg.png");
+    background-image: url("../assets/background.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

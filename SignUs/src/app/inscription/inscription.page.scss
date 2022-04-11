@@ -1,9 +1,10 @@
 ion-toolbar{
     --ion-background-color: transparent !important;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #ff9900;
 }
 
 ion-title{
+    color: #ff9900;
     font-size: 30px;
     display: flex;
     text-align: center;
